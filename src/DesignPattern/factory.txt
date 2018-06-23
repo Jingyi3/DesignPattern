@@ -1,0 +1,20 @@
+工厂系列
+
+Spring：IOC AOP
+
+自主生产我们的产品而不再依赖于new
+控制了产生对象的方法
+
+【getInstance静态工厂方法】
+
+public class Car {
+    private Car() {}
+
+    public static Car getInstance() {
+        //Car自己能够控制newCar了
+        //if...进行限制
+        return new Car();
+    }
+    }
+
+任意定制交通工具类型和生产过程

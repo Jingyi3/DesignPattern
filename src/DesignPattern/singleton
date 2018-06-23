@@ -1,0 +1,18 @@
+单例模式
+一个对象
+从始至终只有一个car
+
+
+    private static Car car = new Car();
+
+    private Car() {
+    }
+
+    public static Car getInstance() {
+        //Car自己能够控制newCar了
+        //if...进行限制
+        return car;
+    }
+
+多例：eg连接池
+private static List<Car> cars = new ArrayList<>();
